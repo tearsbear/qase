@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <!-- Color theme for statusbar (Android only) -->
+    <meta name="theme-color" content="#2196f3" />
+    <!-- Your app title -->
+    <title>My App</title>
+    <!-- Path to Framework7 Library Bundle CSS -->
+    <link rel="stylesheet" href="css/framework7.css" />
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/page.css" />
+    <link rel="stylesheet" href="css/font.css" />
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+          <!-- Top Navbar -->
+          <div class="navbar no-hairline" style="padding: 50px">
+            <div class="navbar-bg"></div>
+            <div class="navbar-inner">
+              <div class="left" style="margin-left: 50px">
+                <div class="title font-jost-medium text-color-teal">
+                  Qase --
+                </div>
+                <p
+                  class="text-color-gray"
+                  style="margin-left: 10px; margin-top: 20px"
+                >
+                  a test case tools.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Scrollable page content -->
+          <div class="page-content" style="padding: 102px 0px">
+            <div class="insight">
+              <p class="text-color-gray font-monts-medium">test case for</p>
+              <h1 class="font-monts-semibold">KBRPRIME.ID</h1>
+
+              <div class="row">
+                <div class="col-33">
+                  <h3 class="font-monts-medium">Description</h3>
+                  <p class="text-color-gray">
+                    Create a list of functionality test, usability test and user
+                    interface test for
+                    <a
+                      href="https://kbrprime.id"
+                      class="external"
+                      target="_blank"
+                      >KBRPRIME.ID Website</a
+                    >
+                  </p>
+                </div>
+                <div class="col-20">
+                  <div
+                    style="margin-top: -78px"
+                    class="gauge gauge-init gaugef"
+                    data-type="circle"
+                    data-value="0"
+                    data-value-text="0%"
+                    data-value-text-color="#009688"
+                    data-border-color="#009688"
+                    data-label-text="of functionality test"
+                    data-label-text-color="#009688"
+                    data-label-font-weight="700"
+                  ></div>
+                </div>
+                <div class="col-20">
+                  <div
+                    style="margin-top: -78px"
+                    class="gauge gauge-init gauges"
+                    data-type="circle"
+                    data-value="0"
+                    data-value-text="0%"
+                    data-value-text-color="#009688"
+                    data-border-color="#009688"
+                    data-label-text="of usability test"
+                    data-label-text-color="#009688"
+                    data-label-font-weight="700"
+                  ></div>
+                </div>
+                <div class="col-20">
+                  <div
+                    style="margin-top: -78px"
+                    class="gauge gauge-init gaugeu"
+                    data-type="circle"
+                    data-value="0"
+                    data-value-text="0%"
+                    data-value-text-color="#009688"
+                    data-border-color="#009688"
+                    data-label-text="of interface test"
+                    data-label-text-color="#009688"
+                    data-label-font-weight="700"
+                  ></div>
+                </div>
+              </div>
+            </div>
+
+            <div style="padding: 0px 50px">
+              <div class="block accordion-list custom-accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-toggle">
+                    <i class="icon icon-plus">
+                      <img src="assets/chevron-down.svg" alt="" />
+                    </i>
+                    <i class="icon icon-minus">
+                      <img src="assets/chevron-up.svg" alt="" />
+                    </i>
+                    <span class="font-monts-medium">Functionality</span>
+                    <span class="font-monts-medium graph"
+                      >Today at 13:50 PM</span
+                    >
+                    <span
+                      class="font-monts-medium graph text-color-blue"
+                      id="numif"
+                      >0 passed</span
+                    >
+                    <span
+                      class="font-monts-medium graph text-color-red"
+                      id="numifn"
+                      >0 failed</span
+                    >
+                    <span
+                      class="text-color-gray status font-jost-medium"
+                      id="statm"
+                      >Pending</span
+                    >
+                  </div>
+                  <div class="accordion-item-content">
+                    <h3><b id="totalfunc"></b> test case</h3>
+                    <div class="data-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th class="label-cell">No</th>
+                            <th class="label-cell">Description</th>
+                            <th class="label-cell">Test Step</th>
+                            <th class="label-cell">Expected Result</th>
+                            <th class="label-cell">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody id="listFunc" style="height: 80px"></tbody>
+                      </table>
+                    </div>
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </div>
+
+              <div class="block accordion-list custom-accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-toggle">
+                    <i class="icon icon-plus">
+                      <img src="assets/chevron-down.svg" alt="" />
+                    </i>
+                    <i class="icon icon-minus">
+                      <img src="assets/chevron-up.svg" alt="" />
+                    </i>
+                    <span class="font-monts-medium">Usability</span>
+                    <span class="font-monts-medium graph"
+                      >Today at 10:50 AM</span
+                    >
+                    <span
+                      class="font-monts-medium graph text-color-blue"
+                      id="numis"
+                      >0 passed</span
+                    >
+                    <span
+                      class="font-monts-medium graph text-color-red"
+                      id="numisn"
+                      >0 failed</span
+                    >
+                    <span
+                      class="text-color-gray status font-jost-medium"
+                      id="statn"
+                      >Pending</span
+                    >
+                  </div>
+                  <div class="accordion-item-content">
+                    <h3><b id="totalusab"></b> test case</h3>
+                    <div class="data-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th class="label-cell">No</th>
+                            <th class="label-cell">Description</th>
+                            <th class="label-cell">Test Step</th>
+                            <th class="label-cell">Expected Result</th>
+                            <th class="label-cell">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody id="listusab" style="height: 80px"></tbody>
+                      </table>
+                    </div>
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </div>
+
+              <div class="block accordion-list custom-accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item-toggle">
+                    <i class="icon icon-plus">
+                      <img src="assets/chevron-down.svg" alt="" />
+                    </i>
+                    <i class="icon icon-minus">
+                      <img src="assets/chevron-up.svg" alt="" />
+                    </i>
+                    <span class="font-monts-medium">User Interface</span>
+                    <span class="font-monts-medium graph"
+                      >Today at 08:50 AM</span
+                    >
+                    <span
+                      class="font-monts-medium graph text-color-blue"
+                      id="numin"
+                      >0 passed</span
+                    >
+                    <span
+                      class="font-monts-medium graph text-color-red"
+                      id="numint"
+                      >0 failed</span
+                    >
+                    <span
+                      class="text-color-gray status font-jost-medium"
+                      id="stati"
+                      >Pending</span
+                    >
+                  </div>
+                  <div class="accordion-item-content">
+                    <h3><b id="totalui"></b> test case</h3>
+                    <div class="data-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th class="label-cell">No</th>
+                            <th class="label-cell">Description</th>
+                            <th class="label-cell">Test Step</th>
+                            <th class="label-cell">Expected Result</th>
+                            <th class="label-cell">Status</th>
+                          </tr>
+                        </thead>
+                        <tbody id="listui" style="height: 80px"></tbody>
+                      </table>
+                    </div>
+                    <br />
+                    <br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library Bundle JS-->
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/framework7.js"></script>
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/page.js"></script>
+  </body>
+</html>

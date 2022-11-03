@@ -1,0 +1,41 @@
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap");
+
+.font-jost-light {
+  font-weight: 300 !important;
+  font-family: "Jost", sans-serif;
+}
+
+.font-jost-regular {
+  font-weight: 400 !important;
+  font-family: "Jost", sans-serif;
+}
+
+.font-jost-medium {
+  font-weight: 500 !important;
+  font-family: "Jost", sans-serif;
+}
+
+.font-jost-semibold {
+  font-weight: 600 !important;
+  font-family: "Jost", sans-serif;
+}
+
+.font-monts-light {
+  font-weight: 300 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-monts-regular {
+  font-weight: 400 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-monts-medium {
+  font-weight: 500 !important;
+  font-family: "Montserrat", sans-serif;
+}
+
+.font-monts-semibold {
+  font-weight: 600 !important;
+  font-family: "Montserrat", sans-serif;
+}
